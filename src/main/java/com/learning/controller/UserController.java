@@ -1,5 +1,6 @@
 package com.learning.controller;
 
+import com.learning.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,5 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 @AllArgsConstructor
 public class UserController {
+
+    private final UserService userService;
+
 
 }
