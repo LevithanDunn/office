@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: test-app
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    username: root
+    url: jdbc:mysql://127.0.0.1:3306/mybatis-plus?serverTimezone=UTC
+server:
+  port: 9988
