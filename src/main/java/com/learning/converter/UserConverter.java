@@ -2,6 +2,7 @@ package com.learning.converter;
 
 import com.learning.entity.User;
 import com.learning.entity.UserVo;
+import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 
@@ -12,4 +13,7 @@ import org.mapstruct.MappingConstants;
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface UserConverter {
     UserVo toUserVo(User user);
+
+    @InheritInverseConfiguration
+    User toUser(UserVo userVo);
 }
