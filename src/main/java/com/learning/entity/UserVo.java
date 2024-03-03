@@ -1,24 +1,13 @@
 package com.learning.entity;
 
-import java.io.Serializable;
-
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 /**
- * <p>
- *
- * </p>
- *
- * @author Kim
- * @since 2024-02-18
+ * @author Jinawei
+ * @created 2024-03-03
  */
 @Data
-public class User implements Serializable {
-
-    private static final long serialVersionUID = 1L;
-
+public class UserVo {
     /**
      * 主键ID
      */
